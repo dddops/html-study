@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>음료 설문조사</title>
+  </head>
+  <body>
+    <header>
+      <h1>음료 설문조사</h1>
+      <p>모든 항목에 빠짐없이 체크해주십시오.</p>
+    </header>
+    <hr />
+    <main>
+      <form method="post" action="submit.html">
+        <fieldset>
+          <legend>설문자 정보</legend>
+          <label for="name">이름</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="실명을 입력해 주세요"
+          />
+          <br />
+          <label for="email">이메일 주소</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="이메일을 입력해 주세요"
+          />
+        </fieldset>
+
+        <fieldset>
+          <legend>설문</legend>
+          <p>연령대가 어떻게 되십니까?</p>
+          <input type="radio" name="age" value="10s" id="age10" />
+          <label for="age10">10대</label>
+          <input type="radio" name="age" value="20s" id="age20" />
+          <label for="age20">20대</label>
+          <input type="radio" name="age" value="30s" id="age30" />
+          <label for="age30">30대</label>
+          <input type="radio" name="age" value="40s" id="age40" />
+          <label for="age40">40대</label>
+          <input type="radio" name="age" value="50s" id="age50" />
+          <label for="age50">50대</label>
+
+          <p>선호하는 음료는 무엇인가요?</p>
+          <input type="checkbox" name="beverage" value="coffee" id="coffee" />
+          <label for="coffee">커피</label>
+          <input type="checkbox" name="beverage" value="tea" id="tea" />
+          <label for="tea">차</label>
+          <input type="checkbox" name="beverage" value="juice" id="juice" />
+          <label for="juice">주스</label>
+          <input type="checkbox" name="beverage" value="soda" id="soda" />
+          <label for="soda">탄산음료</label>
+          <input type="checkbox" name="beverage" value="water" id="water" />
+          <label for="water">물</label>
+          <input type="checkbox" name="beverage" value="etc" id="etc" />
+          <label for="etc">기타</label>
+        </fieldset>
+
+        <fieldset>
+          <legend>기타 의견</legend>
+          <textarea name="comment" cols="50" rows="5"></textarea>
+        </fieldset>
+
+        <input type="submit" value="제출" />
+      </form>
+      <p>수고하셨습니다.</p>
+    </main>
+  </body>
+</html>
